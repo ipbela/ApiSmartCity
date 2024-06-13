@@ -7,6 +7,8 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from rest_framework.routers import DefaultRouter
 from app_smart.api.filters import TemperaturaFilterView, ContadorFilterView, LuminosidadeFilterView, UmidadeFilterView
 
+# this is our root url file
+
 router = DefaultRouter()
 router.register(r'sensores', SensorViewSet)
 router.register(r'temperatura', TemperaturaDataViewSet)
